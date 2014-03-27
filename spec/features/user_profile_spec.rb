@@ -6,7 +6,6 @@ feature "Profile page" do
 
     visit user_path(user)
     expect(page).to have_content(user.name)
-
     expect(page).to have_content(user.email)
   end
 end
